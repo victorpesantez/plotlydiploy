@@ -72,7 +72,7 @@ function buildCharts(sample) {
     var otuLabels = result.otu_labels;
     var sampleValues = result.sample_values;
     // 7. Create the yticks for the bar chart.
-    // Hint: Get the the top 10 otu_ids and map them in descending order 
+    // Hint: Get the the top 10 otu_ids and map them in descending order. 
     
     //  so the otu_ids with the most bacteria are last. 
 
@@ -104,9 +104,9 @@ function buildCharts(sample) {
 
     // 1. Create the trace for the bubble chart.
     var bubbleData = [{
-      type: "scatter",
+      //type: "scatter",
       mode: "markers",
-      x: yticks,
+      x: otuID,
       y: sampleValues,   
 
     }];
